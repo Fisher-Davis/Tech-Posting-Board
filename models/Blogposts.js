@@ -18,12 +18,12 @@ Blogposts.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    user: {
+      comments:{
         type: DataTypes.STRING,
-
-
-
+        allowNull: true,
+        
     },
+    
     user_id: {
         type: DataTypes.INTEGER,
         references: {
@@ -32,6 +32,7 @@ Blogposts.init(
 
         }
     }
+  
 
   
   },

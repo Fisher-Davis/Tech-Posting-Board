@@ -1,9 +1,14 @@
 const express = require('express');
 const sequelize = require('./config/connection')
+const routes = require('./controllers')
 
 const app = express()
 
-const tableGen = require('./models')
+
+// this created the tables in blog_db
+// const tableGen = require('./models')
+
+app.use(routes)
 
 const PORT = process.env.PORT || 3001
 
