@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS blog_bd;
+
+CREATE DATABASE  blog_bd;
